@@ -498,11 +498,13 @@
         </p>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+          <input type="text" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
+          <div id="txtNome"></div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          <input type="email" class="form-control" id="email" onkeyup="validaEmail()" placeholder="nome@exemplo.com">
+          <div id="txtEmail"></div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Celular</label>
@@ -514,7 +516,8 @@
         </div>
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          <textarea class="form-control" id="msg" rows="10" onkeyup="validaMsg()"></textarea>
+          <div id="txtMsg"></div>
         </div>
         <button class="btn btn-success">Enviar</button>
       </div>
@@ -547,6 +550,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
