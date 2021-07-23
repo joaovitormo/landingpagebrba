@@ -1,0 +1,61 @@
+.allblack {
+    background-color:#0D1117;
+    
+    color:#fff;
+    
+    border-bottom: 8px solid #fff;
+}
+.allgreen {
+    background-color: #003638;
+    color:#fff;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    padding:5px;
+}
+.allsun {
+    background-color:#FCDE4C;
+    color:#010409;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    padding:5px;
+}
+.allbrown {
+    background-color: #362315;
+    color:#fff;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    padding:5px;
+}
+.allbrown2 {
+    background-color: #362315;
+    color:#fff;
+    border-bottom: 5px solid #fff;
+    padding:5px;
+}
+.fundo {
+    background-color:#010409;
+}
+
+.objectImage {
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    object-position: center;
+}
+.objectImage2 {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.objectImage3 {
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.btnwhite {
+    color:#fff;
+}
