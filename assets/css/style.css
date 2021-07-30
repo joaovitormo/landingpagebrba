@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
 .allblack {
     background-color:#0D1117;
     
@@ -38,7 +42,7 @@
 
 .objectImage {
     width: 100%;
-    max-height: 900px;
+    max-height: 1030px;
     object-fit: cover;
     object-position: center;
 }
@@ -58,4 +62,44 @@
 
 .btnwhite {
     color:#fff;
+}
+
+.menu-none {
+    margin-top: -50px;
+}
+
+.iconHover:hover {
+    color:rgb(68, 64, 64);
+    transition:0.6s;
+}
+
+.allsun input {
+    background-color:#f5e9af ;
+    border: none;
+    
+}
+.allsun textarea {
+    background-color:#f5e9af ;
+    border: none;
+    
+}
+
+.allsun input:focus{
+    background-color:#f5e9af ;
+    border: none;
+    
+}
+.allsun textarea:focus {
+    background-color:#f5e9af ;
+    border: none;
+    
+}
+.navbar {
+    font-size: 22px;
+    padding:30px;
+}
+
+.gradiente {
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
 }

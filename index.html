@@ -11,12 +11,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap" rel="stylesheet">
   <title>Breaking Bad</title>
 </head>
 
 <body class="fundo">
   <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
@@ -29,7 +35,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -56,17 +62,15 @@
             <a class="nav-link" href="#contato">Contato</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
   </nav>
   <!--/navbar-->
   <!--Carrosel-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
     <div class="carousel-indicators">
+      
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -74,18 +78,19 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://i.pinimg.com/originals/c8/dd/4e/c8dd4e1b9fa3c40d15bc9c24fc801084.jpg" class="objectImage"
+    <div class="carousel-inner menu-none">
+      <div class="carousel-item active ">
+        
+          <img src="https://www.teahub.io/photos/full/72-725250_breaking-bad-wallpaper.jpg"
+          class="d-block w-100 objectImage" alt="...">
+      </div>
+      <div class="carousel-item gradiente">
+        <img src="https://jpimg.com.br/uploads/2017/04/635372809-breaking-bad-remix-para-pista.jpg"
+          class="d-block w-100 objectImage" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.hdqwalls.com/wallpapers/breaking-bad-fan-art.jpg" class="objectImage"
           alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://wallpapersfull.com/wallpapers/2019/Papel-de-Parede-breaking-bad-no-carro-36459.jpg"
-          class="d-block w-100 objectImage" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.teahub.io/photos/full/72-725250_breaking-bad-wallpaper.jpg"
-          class="d-block w-100 objectImage" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -103,7 +108,7 @@
   <div class="container allgreen rounded">
     <div class="row d-flex flex">
       <div class="col-6 p-5">
-        <h1 class="display-2 mb-3"><b>Sinopse & Info</b></h1>
+        <h1 class="display-2 mb-3"><b>Sinopse & Info 📓</b></h1>
         <p class="fw-normal">
           Walter White (Bryan Cranston) é um professor de química na casa dos 50 anos que trabalha em uma escola
           secundária no Novo México. Para atender às necessidades de Skyler (Anna Gunn), sua esposa grávida, e Walt
@@ -125,7 +130,7 @@
 
   <!--Personagens-->
   <div class="container bg-dark rounded p-3" id="personagens">
-    <h1 class="display-2 mb-3 allgreen mt-1 rounded p-3"><b>Personagens</b></h1>
+    <h1 class="display-2 mb-3 allgreen mt-1 rounded p-3"><b>Personagens 👨‍👨‍👦‍👦</b></h1>
     <div class="row">
       <div class="col-12 bg-dark d-flex flex-wrap">
         <!--card-->
@@ -138,7 +143,8 @@
               Walter Hartwell "Walt" White Sr., também conhecido por seu pseudônimo clandestino "Heisenberg", era um rei
               do crime das drogas americano. Ex-químico e professor de química do ensino médio em Albuquerque, Novo
               México, ele começou a fabricar metanfetamina de cristal após ser diagnosticado com câncer de pulmão
-              terminal, a fim de pagar por seus tratamentos e garantir o futuro financeiro de sua família.
+              terminal, a fim de pagar por seus tratamentos e garantir o futuro financeiro de sua família. Na
+              pós-graduação, Walt contribuiu para pesquisas que ganhariam o Prêmio Nobel de 1984 em Química.
             </p>
           </div>
         </div>
@@ -154,15 +160,14 @@
               usuário, fabricante e traficante de metanfetaminas em meio período. Ele também era um aluno desatento na
               aula de química de Walter White, mas ainda conseguiu se formar. Em seus 20 e poucos anos, Jesse se tornou
               o parceiro de negócios de Walt no comércio de metanfetamina. Antes de sua parceria com Walt, ele, operando
-              sob o pseudônimo "Cap'n Cook", adicionou um pouco de pimenta chili em pó para destacar sua metanfetamina
+              sob o pseudônimo "Cap'n Cook", dicionou um pouco de pimenta chili em pó para destacar sua metanfetamina
               no mercado. </p>
           </div>
         </div>
         <!--/card-->
         <!--card-->
         <div class="card allblack m-5" style="width: 20rem;">
-          <img
-            src="https://br.web.img3.acsta.net/medias/nmedia/18/36/33/91/19512726.jpg"
+          <img src="https://br.web.img3.acsta.net/medias/nmedia/18/36/33/91/19512726.jpg"
             class="card-img-top objectImage2" alt="...">
           <div class="card-body allblack">
             <h5 class="card-title allgreen">Skyler White</h5>
@@ -170,52 +175,60 @@
               Skyler White (nascida Lambert) é a viúva de Walter White e a irmã de Marie Schrader. Ela e Walter têm um
               filho adolescente, Walter White Jr., e uma filha pequena, Holly White. Skyler se importa muito com Walter,
               mas seu casamento se torna cada vez mais tenso devido a suas ausências inexplicáveis ​​e comportamento
-              bizarro, levando à sua separação.
+              bizarro, levando à sua separação. Quando Walter revela seu envolvimento no negócio de metanfetamina, ela
+              inicialmente procura um divórcio, mas acaba ajudando-o a lavar seus fundos ilícitos.
             </p>
           </div>
         </div>
         <!--/card-->
         <!--card-->
         <div class="card allblack m-5" style="width: 20rem;">
-          <img src="https://i.glbimg.com/og/ig/infoglobo/f/original/2014/04/04/walt.jpg"
+          <img src="https://static.wikia.nocookie.net/breakingbad/images/7/7b/Hank_S5b.jpg"
             class="card-img-top objectImage2" alt="...">
           <div class="card-body allblack">
-            <h5 class="card-title allgreen">Walter White</h5>
+            <h5 class="card-title allgreen">Hank Schrader</h5>
             <p class="card-text allgreen">
-              Walter Hartwell "Walt" White Sr., também conhecido por seu pseudônimo clandestino "Heisenberg", era um rei
-              do crime das drogas americano. Ex-químico e professor de química do ensino médio em Albuquerque, Novo
-              México, ele começou a fabricar metanfetamina de cristal após ser diagnosticado com câncer de pulmão
-              terminal, a fim de pagar por seus tratamentos e garantir o futuro financeiro de sua família.
+              Henry R. "Hank" Schrader era o marido de Marie Schrader, a irmã de Skyler White, e Agente Especial Adjunto
+              Responsável (ASAC) do escritório de Albuquerque da Administração de Fiscalização de Drogas. Um homem cheio
+              de energia e barulhento, Hank era cunhado de Walter White. Embora ele fosse um agente altamente competente
+              e realmente se preocupasse com Marie, Walter, Skyler White e Walter White Jr., seus modos barulhentos o
+              isolavam do perigo que enfrentava diariamente.
             </p>
           </div>
         </div>
         <!--/card-->
         <!--card-->
         <div class="card allblack m-5" style="width: 20rem;">
-          <img src="https://i.glbimg.com/og/ig/infoglobo/f/original/2014/04/04/walt.jpg"
+          <img
+            src="https://pyxis.nymag.com/v1/imgs/220/4d4/751aaf791aa8d4950babe24139860d6086-22-better-call-saul.rsquare.w700.jpg"
             class="card-img-top objectImage2" alt="...">
           <div class="card-body allblack">
-            <h5 class="card-title allgreen">Walter White</h5>
+            <h5 class="card-title allgreen">Jimmy McGill</h5>
             <p class="card-text allgreen">
-              Walter Hartwell "Walt" White Sr., também conhecido por seu pseudônimo clandestino "Heisenberg", era um rei
-              do crime das drogas americano. Ex-químico e professor de química do ensino médio em Albuquerque, Novo
-              México, ele começou a fabricar metanfetamina de cristal após ser diagnosticado com câncer de pulmão
-              terminal, a fim de pagar por seus tratamentos e garantir o futuro financeiro de sua família.
+              James Morgan "Jimmy" McGill, mais conhecido por seu apelido profissional Saul Goodman, ("Magic Man") é o
+              ex-advogado principal da Saul Goodman & Associates e o marido de Kim Wexler. Ele operava em um escritório
+              de shopping barato e dirigia comerciais de TV noturnos, aconselhando os clientes em potencial para
+              "chamarem o Saul" quando tivessem problemas com a lei. Enquanto seus anúncios pareciam bregas e baratos,
+              Saul era um advogado eficaz, usando táticas ilegais e esquemas sujos para libertar ou absolver seus
+              clientes.
             </p>
           </div>
         </div>
         <!--/card-->
         <!--card-->
         <div class="card allblack m-5" style="width: 20rem;">
-          <img src="https://i.glbimg.com/og/ig/infoglobo/f/original/2014/04/04/walt.jpg"
+          <img
+            src="https://vader.news/__export/1613258166465/sites/gadgets/img/2021/02/13/gus-fring-breaking-bad.jpg_646506402.jpg"
             class="card-img-top objectImage2" alt="...">
           <div class="card-body allblack">
-            <h5 class="card-title allgreen">Walter White</h5>
+            <h5 class="card-title allgreen">Gustavo Fring</h5>
             <p class="card-text allgreen">
-              Walter Hartwell "Walt" White Sr., também conhecido por seu pseudônimo clandestino "Heisenberg", era um rei
-              do crime das drogas americano. Ex-químico e professor de química do ensino médio em Albuquerque, Novo
-              México, ele começou a fabricar metanfetamina de cristal após ser diagnosticado com câncer de pulmão
-              terminal, a fim de pagar por seus tratamentos e garantir o futuro financeiro de sua família.
+              Gustavo "Gus" Fring era um dono de restaurante de Albuquerque , chileno , chefe do tráfico, magnata dos
+              negócios e filantropo. Ele era o respeitado proprietário da Los Pollos Hermanos , uma rede de restaurantes
+              de grande sucesso. No entanto, apesar das aparências externas, Gus era um grande chefão do tráfico
+              inicialmente afiliado a um cartel de drogas mexicano , usando secretamente seu restaurante como uma
+              fachada legítima para a distribuição de metanfetaminas em todo o sudoeste americano. Gus era um criminoso
+              que "se escondia à vista de todos".
             </p>
           </div>
         </div>
@@ -230,7 +243,7 @@
   <!--/Personagens-->
   <!--Temporadas-->
   <div class="container bg-dark rounded p-3" id="primeira">
-    <h1 class="display-3 mb-3 allgreen mt-1 rounded p-3"><b>Temporadas</b></h1>
+    <h1 class="display-3 mb-3 allgreen mt-1 rounded p-3"><b>Temporadas 📺</b></h1>
     <div class="row">
       <div class="col-12 bg-dark d-flex flex-wrap">
         <!--card-->
@@ -273,29 +286,24 @@
           <div class="card-body allblack">
             <h5 class="card-title allgreen " id="segunda">• 2ª Temporada</h5>
             <p class="card-text allgreen">
-              Walter White fez 50 anos e é um professor de química no high school e ele sempre foi uma pessoa com uma
-              vida simples e nunca teve momentos de muita agitação na sua vida. O seu salário de professor trata da sua
-              família: ele, a esposa Skylar que está grávida e o filho adolescente com um problema de saúde. A isto
-              junta-se o cunhado Hank que trabalha na DEA (departamento policial de contrabando de droga) e a cunhada
-              Marie.
-              <br><br>
-              Tudo se alterou na vida de Walter quando ele descobriu que tem cancro no pulmão e ele percebeu que o
-              processo de cura do cancro lhe iria custar uma fortuna. Toda a série ganhou interesse quando ele, como
-              professor de química, decidiu aliar-se a um antigo aluno que é traficante, o Jesse e o plano de Walter era
-              eles os dois cozinharem cristais. Ao longo da temporada eles conseguiram produzir os cristais, em muitos
-              casos ainda muito atrapalhados mas com o passar do tempo e da experiência conseguiram evoluir no trabalho:
-              arranjaram os materiais, a carrinha, os cristais eram mais puros e em mais quantidade e os vendedores eram
-              melhores. Inicialmente eles os dois vendem ao Crazy-8 (que eles o mataram) e por fim o maluco Tuco.
-              Durante isto Walter usou sempre o nome de Heinsenberg.
-              <br><br>
-              Só a meio da temporada é que Skylar descobriu que ele tinha cancro, convenceu-o a fazer a quimio e durante
-              toda a temporada ela desconfiou das atitudes estranhas de Walt mas ele nunca lhe contou. Só lhe escondeu e
-              mentiu. Aliás uma das mentiras foi que o dinheiro para o tratamento não eram dos amigos ricos mas sim da
-              droga.
-              Já nesta 1º temporada Walter ganhou mais ambição que Jesse: quis produzir mais para obter milhares de
-              dólares!! Também aconteceu que Hank já investigou os incidentes estranhos que começaram a surgir no
-              contrabando.
-              Durante toda a temporada: Walter produziu cristais sem que a família soubesse, a Skylar esteve grávida
+              A segunda temporada começou com o bom negócio que eles fizeram com Tuco - receberam muito dinheiro. Logo a
+              seguir o maluco Tuco raptou-os para os levar para o México produzir imenso, eles conseguiram escapar e
+              Hank foi quem matou o Tuco!! A partir daí Hank continuou a investigar o caso e ao interrogar Jesse
+              conseguiu mais informações, mas ele ainda não descobriu que é o Walter!
+              Jesse ficou sem casa e felizmente conseguiu uma casinha nova. Foi aí que ele conheceu a Jane, a sua
+              vizinha e eles foram um casal.<br><br>
+              O plano de Walter e Jesse teve de mudar quando um dos distribuidores deles foi preso e depois de uns
+              problemas com o advogado, o Saul, que descobriu tudo, para não contar à DEA o advogado tornou-se sócio
+              deles e arranjou um homem para ser preso em vez de Walt!! <br><br>
+              Com o aumento das despesas das sessões de quimio Skylar voltou a trabalhar (ainda grávida) e Walter quis
+              produzir ainda mais e mais. Foi por isso que eles os dois ficaram 3 dias seguidos a produzir os cristais
+              100%. Aqui eles produziram quilos pela primeira vez!! Ainda assim mais tarde eles tiveram o problema de
+              que tinham imensa droga mas não tinham como vendê-la. <br><br>
+              No fim da temporada: a Jane morreu com uma convulsão (ele e Jesse tinham feito heroína), Walter conseguiu
+              escoar os quilos que tinha e já recebeu 1 milhão de dólares, o cancro de Walter reduziu imenso e ele assim
+              tem mais tempo de vida (e na série) e a Skylar finalmente teve a bebé Holly.
+              No último episódio Skylar descobriu metade da verdade, ou seja, metade das mentiras de Walt e decidiu sair
+              de casa por uns tempos.
             </p>
           </div>
         </div>
@@ -306,29 +314,35 @@
           <div class="card-body allblack">
             <h5 class="card-title allgreen" id="terceira">• 3ª Temporada</h5>
             <p class="card-text allgreen">
-              Walter White fez 50 anos e é um professor de química no high school e ele sempre foi uma pessoa com uma
-              vida simples e nunca teve momentos de muita agitação na sua vida. O seu salário de professor trata da sua
-              família: ele, a esposa Skylar que está grávida e o filho adolescente com um problema de saúde. A isto
-              junta-se o cunhado Hank que trabalha na DEA (departamento policial de contrabando de droga) e a cunhada
-              Marie.
-              <br><br>
-              Tudo se alterou na vida de Walter quando ele descobriu que tem cancro no pulmão e ele percebeu que o
-              processo de cura do cancro lhe iria custar uma fortuna. Toda a série ganhou interesse quando ele, como
-              professor de química, decidiu aliar-se a um antigo aluno que é traficante, o Jesse e o plano de Walter era
-              eles os dois cozinharem cristais. Ao longo da temporada eles conseguiram produzir os cristais, em muitos
-              casos ainda muito atrapalhados mas com o passar do tempo e da experiência conseguiram evoluir no trabalho:
-              arranjaram os materiais, a carrinha, os cristais eram mais puros e em mais quantidade e os vendedores eram
-              melhores. Inicialmente eles os dois vendem ao Crazy-8 (que eles o mataram) e por fim o maluco Tuco.
-              Durante isto Walter usou sempre o nome de Heinsenberg.
-              <br><br>
-              Só a meio da temporada é que Skylar descobriu que ele tinha cancro, convenceu-o a fazer a quimio e durante
-              toda a temporada ela desconfiou das atitudes estranhas de Walt mas ele nunca lhe contou. Só lhe escondeu e
-              mentiu. Aliás uma das mentiras foi que o dinheiro para o tratamento não eram dos amigos ricos mas sim da
-              droga.
-              Já nesta 1º temporada Walter ganhou mais ambição que Jesse: quis produzir mais para obter milhares de
-              dólares!! Também aconteceu que Hank já investigou os incidentes estranhos que começaram a surgir no
-              contrabando.
-              Durante toda a temporada: Walter produziu cristais sem que a família soubesse, a Skylar esteve grávida
+              Esta terceira temporada começou com Skylar e Walt separados e com os papeis do divórcio em curso.
+              Revoltado com a situação, aos poucos Walt impôs-se e voltou para casa contra a vontade de Skylar. <br><br>
+              No início da temporada Walt não quis produzir mais pois achava que já tinha causado demasiados problemas
+              na sua vida (a separação da sua família). Walt não quis produzir, MAS Jesse e Guy (o dono do restaurante
+              os Pullos e líder do quartel de tráfico para o México) sim, eles queriam continuar a produzir. Guy
+              convenceu Walt, e, com as situações que foram acontecendo, Walt voltou a cozinhar, mas PELA PRIMEIRA VEZ
+              em massa, num bom e equipado laboratório que Guy deu para Walt e assim eles fizeram vários quilos e
+              milhares de dólares por semana!!<br><br>
+              Ao longo disso tudo, houve duas situações importantes a acontecer: 1. Hank, o cunhado de Walt, vigiu
+              Jesse, tanto que descobriu a CARAVANA onde eles cozinhavam!! Foi por um triz que Hank não apanhou o Walt e
+              o Jesse!!! Mais tarde, Hank furioso agrediu Jesse e ele foi para ao hospital (foi aí que Jesse aceitou
+              trabalhar com Walt no laboratório). 2. Desde o início da temporada que os dois irmãos primos de Tuco
+              chegaram à série e ao bairro só para matar Walt! Eles trabalhavam para Guy e ele convenceu-os a não matar
+              Walt (pois Guy precisou dele para produzir a droga) e por isso, a meio da temporada os irmãos foram matar
+              Hank e depois de uma cena alucinante no parque de estacionamento, os irmãos MORRERAM e Hank sobreviveu por
+              pouco!!!<br><br>
+              Depois disso, Hank esteve no hospital e foi o dinheiro de Walt que pagou as dívidas da recuperação. Nessa
+              altura, mais que em toda a temporada, a Skylar esteve envolvida no negócio de Walt: inventaram a história
+              que ele tinha ganho muito dinheiro a jogar e foram ter com o Saul para inventar um esquema de "lavagem de
+              dinheiro"!!<br><br>
+              No fim da temporada Jesse e Walt perceberam que Guy já se queria livrar deles os dois, pois eles causaram
+              muitos problemas ao negócio de Guy e já mais pessoas sabiam. Para isso Guy contratou um parceiro
+              temporário no laboratório para aprender toda a produção através de Walt.<br><br>
+              Ainda nesta temporada: a Skylar vingou-se de Walt e traiu-o com o patrão Ted, o Jesse comprou a casa dos
+              seus pais e despejou-os, Jesse conheceu uma rapariga no grupo da igreja, no fim Jesse e Walt descobriram e
+              mataram os gajos que tinham matado o Combo (amigo de Jesse).<br><br>
+              Em geral nesta temporada a Skylar acabou por ficar muito mais envolvida e a par dos negócios de Walt; Hank
+              e a polícia estiveram MUITO mais perto de descobrir que Jesse e Walt produzem droga; as situações de
+              segredos e problemas pareceram mais dramáticas e malucas.
             </p>
           </div>
         </div>
@@ -339,29 +353,38 @@
           <div class="card-body allblack">
             <h5 class="card-title allgreen" id="quarta">• 4ª Temporada</h5>
             <p class="card-text allgreen">
-              Walter White fez 50 anos e é um professor de química no high school e ele sempre foi uma pessoa com uma
-              vida simples e nunca teve momentos de muita agitação na sua vida. O seu salário de professor trata da sua
-              família: ele, a esposa Skylar que está grávida e o filho adolescente com um problema de saúde. A isto
-              junta-se o cunhado Hank que trabalha na DEA (departamento policial de contrabando de droga) e a cunhada
-              Marie.
+              Nesta temporada o modo de trabalho foi igual ao da ultima temporada: em que Walt e Jesse trabalharam para
+              Gus, no laboratório, e Hank esteve cada vez mais perto de descobrir a rede de trafico... mas ao longo da
+              temporada, o ódio entre Gus e Walt continuou e levou a mudanças drásticas. <br><br>
+              A temporada começou com Jesse a matar o Gale (o químico que Gus contratou para trabalhar com Walt)!! Jesse
+              e Walt tiveram que se livrar dele pois o plano de Gus era Gale aprender a produzir a droga para Gus
+              despedir Walt e Jesse que só lhe davam problemas.<br><br>
+              Entretanto, depois do ataque violento a Hank na temporada passada, esta temporada inteira ele esteve em
+              casa, sem andar, a recuperar, mas mesmo assim ele continuou a investigação para descobrir quem produz a
+              droga dos cristais azuis e Hank esteve cada vez mais perto: Hank já descobriu que Gus é o líder do tráfego
+              de droga e também descobriu dos armazéns de distribuição do restaurante de Gus que pode ser a base de
+              distribuição de droga. Com o facto do agente Hank já descobrir a rede de droga (mas ainda não ter provas
+              exatas), Gus quis matar Walt ainda mais, e Walt também tentou matar Gus com veneno mas não resultou.
               <br><br>
-              Tudo se alterou na vida de Walter quando ele descobriu que tem cancro no pulmão e ele percebeu que o
-              processo de cura do cancro lhe iria custar uma fortuna. Toda a série ganhou interesse quando ele, como
-              professor de química, decidiu aliar-se a um antigo aluno que é traficante, o Jesse e o plano de Walter era
-              eles os dois cozinharem cristais. Ao longo da temporada eles conseguiram produzir os cristais, em muitos
-              casos ainda muito atrapalhados mas com o passar do tempo e da experiência conseguiram evoluir no trabalho:
-              arranjaram os materiais, a carrinha, os cristais eram mais puros e em mais quantidade e os vendedores eram
-              melhores. Inicialmente eles os dois vendem ao Crazy-8 (que eles o mataram) e por fim o maluco Tuco.
-              Durante isto Walter usou sempre o nome de Heinsenberg.
-              <br><br>
-              Só a meio da temporada é que Skylar descobriu que ele tinha cancro, convenceu-o a fazer a quimio e durante
-              toda a temporada ela desconfiou das atitudes estranhas de Walt mas ele nunca lhe contou. Só lhe escondeu e
-              mentiu. Aliás uma das mentiras foi que o dinheiro para o tratamento não eram dos amigos ricos mas sim da
-              droga.
-              Já nesta 1º temporada Walter ganhou mais ambição que Jesse: quis produzir mais para obter milhares de
-              dólares!! Também aconteceu que Hank já investigou os incidentes estranhos que começaram a surgir no
-              contrabando.
-              Durante toda a temporada: Walter produziu cristais sem que a família soubesse, a Skylar esteve grávida
+              Nesta temporada Gus foi pressionado para expandir o negócio para o México e por isso levou Jesse e Mike
+              para lá para produzir a droga. Foi lá no México que Gus se vingou do passado e terminou negócios: à alguns
+              anos atrás, Gus e o seu "irmão"/sócio do restaurante foram convidados para uma casa de um líder de um
+              Cartel no México, o Don Lario, que ficou surpreendido pelo sucesso que os dois estavam a fazer com o
+              restaurante e sua expansão que propôs usar isso como forma de traficar droga e Gus e o seu irmão
+              aceitaram, mas eles mataram o irmão de Gus. Agora no México, Gus vingou-se e matou todos os homens do
+              cartel e ferido, ele, Mike e Jesse regressaram rapidamente para os EUA. O único homem desse cartel que
+              ainda estava vivo era o Hector Salamanca que estava lar de idosos que Gus ia visitar para gozar com
+              ele.<br><br>
+              Jesse e Walt descobriram que o novo plano de Gus era colocar Jesse contra Walt e colocá-lo à frente do
+              laboratório por isso os dois voltaram a unir-se para matar Gus.<br><br>
+              No fim da temporada Walt descobriu desse inimigo de Gus, o Hector Salamanca, colocou uma bomba na cadeira
+              de rodas do velho e MATOU ELE E O GUS!!!<br><br>
+              Sim! Walt conseguiu matar Gus e agora sem ele os seus problemas desapareceram e a sua família deixou de
+              estar em perigo.<br><br>
+
+              Ainda nesta temporada: Skylar e Walt já compraram a lavandaria de carros para poderem fazer lavagem de
+              dinheiro dos milhões que Walt recebia; o patrão de Skyler, o Ted, estava falido, ela ajudou a pagar dívida
+              de milhares de dólares mas por causa disso Ted teve acidente e ficou paraplégico!
             </p>
           </div>
         </div>
@@ -372,29 +395,21 @@
           <div class="card-body allblack">
             <h5 class="card-title allgreen" id="quinta">• 5ª Temporada</h5>
             <p class="card-text allgreen">
-              Walter White fez 50 anos e é um professor de química no high school e ele sempre foi uma pessoa com uma
-              vida simples e nunca teve momentos de muita agitação na sua vida. O seu salário de professor trata da sua
-              família: ele, a esposa Skylar que está grávida e o filho adolescente com um problema de saúde. A isto
-              junta-se o cunhado Hank que trabalha na DEA (departamento policial de contrabando de droga) e a cunhada
-              Marie.
-              <br><br>
-              Tudo se alterou na vida de Walter quando ele descobriu que tem cancro no pulmão e ele percebeu que o
-              processo de cura do cancro lhe iria custar uma fortuna. Toda a série ganhou interesse quando ele, como
-              professor de química, decidiu aliar-se a um antigo aluno que é traficante, o Jesse e o plano de Walter era
-              eles os dois cozinharem cristais. Ao longo da temporada eles conseguiram produzir os cristais, em muitos
-              casos ainda muito atrapalhados mas com o passar do tempo e da experiência conseguiram evoluir no trabalho:
-              arranjaram os materiais, a carrinha, os cristais eram mais puros e em mais quantidade e os vendedores eram
-              melhores. Inicialmente eles os dois vendem ao Crazy-8 (que eles o mataram) e por fim o maluco Tuco.
-              Durante isto Walter usou sempre o nome de Heinsenberg.
-              <br><br>
-              Só a meio da temporada é que Skylar descobriu que ele tinha cancro, convenceu-o a fazer a quimio e durante
-              toda a temporada ela desconfiou das atitudes estranhas de Walt mas ele nunca lhe contou. Só lhe escondeu e
-              mentiu. Aliás uma das mentiras foi que o dinheiro para o tratamento não eram dos amigos ricos mas sim da
-              droga.
-              Já nesta 1º temporada Walter ganhou mais ambição que Jesse: quis produzir mais para obter milhares de
-              dólares!! Também aconteceu que Hank já investigou os incidentes estranhos que começaram a surgir no
-              contrabando.
-              Durante toda a temporada: Walter produziu cristais sem que a família soubesse, a Skylar esteve grávida
+              Se as outras temporadas de Breaking Bad já eram incríveis, o que dizer desta? A série ganhou um final
+              digno da sua grandeza, encerrando a história de Jesse e Walt. A narrativa de Breaking Bad é tão boa, que,
+              ao assistir o último episódio, logo vem a sensação de quero mais - não pelo fato de deixar um final
+              aberto, o que não acontece aqui, mas sim pelo envolvimento que criamos com a trama e os personagens. Os
+              méritos por toda essa grandiosidade ficam por conta do criador da série, Vince Gilligan, e por todo o
+              elenco, que têm uma atuação impecável. Assim como Vince Gilligan disse em uma entrevista, Breaking Bad
+              acabou na hora que tinha que acabar.<br><br>
+
+              Logo quando descobriu que estava com câncer, Walt entrou no mundo do tráfico com a intenção ajudar a sua
+              família financeiramente. No desenvolver da história, nós percebemos que Walt cada vez dá menos atenção
+              para sua mulher e filhos, preocupando-se muito mais com o seu ego na produção de metanfetamina. Para cada
+              ação na série existe uma reação: tudo pode aparentar estar certo, mas as consequências ainda irão
+              aparecer. No final da temporada, Walt sente bem essas consequências e tenta resolver as coisas do seu
+              jeito. Para aqueles que gostam, nos episódios finais existem inúmeras referências que enriquecem ainda
+              mais a conclusão da história.<br><br>
             </p>
           </div>
         </div>
@@ -413,7 +428,7 @@
         <img src="assets/css/heise.jpg" alt="" class="img-fluid objectImage">
       </div>
       <div class="col-6 p-5 rounded allbrown2">
-        <h1 class="display-2 mb-3"><b>Curiosidades</b></h1>
+        <h1 class="display-2 mb-3"><b>Curiosidades 🔎</b></h1>
         <p class="fw-normal">
           Em 2018, a série Breaking Bad, considerada uma das melhores séries dramáticas de todos os tempos, completará
           dez anos desde a estreia.
@@ -492,54 +507,56 @@
   <div class="container allsun rounded" id="contato">
     <div class="row d-flex flex">
       <div class="col-6 p-3">
-        <h1 class="display-3 mb-3"><b><i>"Better Call Saul"</i></b></h1>
+        <h1 class="display-3 mb-3"><b><i>"Better Call Saul"</i> ☎</b></h1>
         <p class="fw-normal">
           Entre em contato conosco que avisaremos para Saul Goodman :D
         </p>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Nome</label>
+          <label for="exampleFormControlInput1" class="form-label">Nome*</label>
           <input type="text" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
           <div id="txtNome"></div>
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <label for="exampleFormControlInput1" class="form-label">Email*</label>
           <input type="email" class="form-control" id="email" onkeyup="validaEmail()" placeholder="nome@exemplo.com">
           <div id="txtEmail"></div>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Celular</label>
-          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
+          <input type="tel" class="form-control" maxlength="15" id="telefone" placeholder="(xx)xxxxx-xxxx">
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Motivo da mensagem</label>
           <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Exemplo">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+          <label for="exampleFormControlTextarea1" class="form-label">Mensagem*</label>
           <textarea class="form-control" id="msg" rows="10" onkeyup="validaMsg()"></textarea>
           <div id="txtMsg"></div>
         </div>
-        <button class="btn btn-success">Enviar</button>
+        <button class="btn btn-success" onclick="mensagem()">Enviar</button>
       </div>
       <div class="col-6">
-        <img src="https://cdn.wallpapersafari.com/84/71/iwQoaA.jpg" alt=""
-          class="img-fluid objectImage3">
+        <img src="https://cdn.wallpapersafari.com/84/71/iwQoaA.jpg" alt="" class="img-fluid objectImage3">
       </div>
     </div>
   </div>
-<!--/Contato-->
-<div class="container-fluid mt-1 justify-content-center allblack">
-  <footer>
-    <hr>
-    <p class="justify-content-center text-center text-light">
-      Todos os direitos reservados ©
-    </p>
-    <p class="justify-content-center text-center">
-    <a href="facebook.com" class="link-light p-3"><i class="fab fa-facebook fa-2x"> </i></a>
-    <a href="instagram.com" class="link-light p-3 "> <i class="fab fa-instagram fa-2x"> </i></a>
-    <a href="linkedin.com" class="link-light p-3"> <i class="fab fa-linkedin fa-2x"></i></a>
-    </p>
-  </footer>
+  <!--/Contato-->
+  <div class="container-fluid mt-1 justify-content-center allblack">
+    <footer>
+      <hr>
+      <p class="justify-content-center text-center text-light">
+        Todos os direitos reservados © | João Vitor Mendes
+      </p>
+      <p class="justify-content-center text-center">
+        <a href="https://github.com/joaovitormo" class="link-light p-3 iconHover"><i class="fab fa-github fa-2x">
+          </i></a>
+        <a href="https://www.instagram.com/jvitor_sep/" class="link-light p-3 iconHover"> <i
+            class="fab fa-instagram fa-2x"> </i></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-mendes-71b2321a0/" class="link-light p-3 iconHover"> <i
+            class="fab fa-linkedin fa-2x"></i></a>
+      </p>
+    </footer>
 
   </div>
 
@@ -550,7 +567,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 200) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
 </body>
 
 </html>
